@@ -1,0 +1,10 @@
+sudo ip link set can0 down 2>/dev/null
+
+sudo ip link set can0 type can \
+  bitrate 500000 \
+  dbitrate 2000000 \
+  fd on \
+  berr-reporting on \
+  restart-ms 100
+
+sudo ip link set can0 up
