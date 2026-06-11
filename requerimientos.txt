@@ -1,0 +1,4 @@
+sudo apt install can-utils
+sudo apt install python3-pip
+pip3 install python-can
+sudo apt install python3-can
