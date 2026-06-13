@@ -156,7 +156,7 @@ def main():
     signal.signal(signal.SIGINT, stop_handler)
     signal.signal(signal.SIGTERM, stop_handler)
 
-    bus = can.interface.Bus(channel=args.channel, bustype="socketcan")
+    bus = can.interface.Bus(channel=args.channel, interface="socketcan", fd=True)
 
     print("========================================")
     print(" ICM-42688-V CAN-FD Telemetría")
