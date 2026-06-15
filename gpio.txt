@@ -1,0 +1,19 @@
+LEDS
+
+# PB13 / G4  - R
+cansend can0 100##1300401   # ON
+cansend can0 100##1300400   # OFF
+cansend can0 100##13104     # TOGGLE
+cansend can0 100##13204     # GET
+
+# PE8 / G5 - W
+cansend can0 100##1300501   # ON
+cansend can0 100##1300500   # OFF
+cansend can0 100##13105     # TOGGLE
+cansend can0 100##13205     # GET
+
+# PE4 / G6  - B
+cansend can0 100##1300601   # ON
+cansend can0 100##1300600   # OFF
+cansend can0 100##13106     # TOGGLE
+cansend can0 100##13206     # GET
